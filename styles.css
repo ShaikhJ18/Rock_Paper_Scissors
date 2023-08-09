@@ -25,6 +25,15 @@ body{
     text-align: center;
     margin: 30px
 }
+.announcer-box{
+    display: flex;
+    justify-content: center;
+}
+.announcement{
+    font-size: 80px;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
 .round-num-box{
     font-size: 80px;
     color: white;
