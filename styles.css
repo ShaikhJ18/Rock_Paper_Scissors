@@ -27,18 +27,56 @@ body{
 .button-box{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.rock-box,.scissors-box,.paper-box{
-    margin-left: 40px;
-    margin-right: 40px;
-}
+
 .rock,.paper,.scissors{
+    border: 1px solid;
     background-color: #3336FF;
     border-color: #3336FF;
     border-radius: 50px;
 }
+.rock:hover{
+    background-color: rgb(0,0,150);
+}
+.scissors:hover{
+    background-color: rgb(0,0,150);
+}
+.paper:hover{
+    background-color: rgb(0,0,150);
+}
 .rock-image{
     width: 200px;
     height: 200px;
+}
+.rock-image,.scissors-image,.paper-image{
+    width: 300px;
+    height: 300px;
+}
+
+.player-image,.computer-image{
+    width: 300px;
+    height: 300px;
+}
+
+.computer-image-box,.player-image-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.choice-image-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.player-score,.computer-score{
+    font-size: 80px;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+}
+.score-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
