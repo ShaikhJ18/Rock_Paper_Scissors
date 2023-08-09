@@ -38,3 +38,7 @@ body{
     border-color: #3336FF;
     border-radius: 50px;
 }
+.rock-image{
+    width: 200px;
+    height: 200px;
+}
