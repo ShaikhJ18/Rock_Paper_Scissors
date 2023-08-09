@@ -1,19 +1,20 @@
 
+const computerimage = document.querySelector('.computer-image');
 function getComputerChoice(){
     //get random number between 1 and 3
     choice = Math.floor(Math.random() * (3 - 1 + 1)) + 1
     //based on the value 1-3 the function returns rock paper or scissors
     if (choice == 1){
-        return "Rock"
+        computerimage.setAttribute('src','imagesForRPS/fistemojiproper.png')
     }
     else if (choice == 2){
-        return "Paper"
+        computerimage.setAttribute('src','imagesForRPS/handemojigood.png')
     }
     else if (choice == 3){
-        return "scissors"
+        computerimage.setAttribute('src','imagesForRPS/scissorsemojigood.png')
     }
     else{
-        return "Paper"
+        getComputerChoice()
     }
 }
 

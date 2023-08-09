@@ -7,7 +7,16 @@
 body{
     background-color: #337DFF;
 }
-
+.player-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.player-name,.computer-name{
+    font-family: 'Roboto',sans-serif;
+    font-size: 80px;
+    color: white;
+}
 .title-box{
     font-size: 50px;
     font-family: 'Roboto', sans-serif;
