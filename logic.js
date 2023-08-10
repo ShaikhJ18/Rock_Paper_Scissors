@@ -39,47 +39,112 @@ function playRound(playerSelection,computerSelection){
     computer = computerSelection.toLowerCase()
     if (player == computerSelection){
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
     else if (player == "rock" && computer == "scissors"){
         playerScoreHtml++;
-        playerScore.textContent = scoreString+playerScoreHtml
+        playerScore.textContent = "Player " +scoreString+playerScoreHtml
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
     else if (player == "rock" && computer == "paper"){
         computerScoreHtml++;
-        computerScore.textContent = scoreString+computerScoreHtml;
+        computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
     else if (player == "paper" && computer == "scissors"){
         computerScoreHtml++;
-        computerScore.textContent = scoreString+computerScoreHtml;
+        computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
-        roundNumber.textContent = roundString + ROUNDNUM
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        }
+        roundNumber.textContent = roundString + ROUNDNUM 
+ 
     }
     else if (player == "paper" && computer == "rock"){
         playerScoreHtml++;
-        playerScore.textContent = scoreString+playerScoreHtml;
+        playerScore.textContent = "Player " +scoreString+playerScoreHtml;
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        }
         roundNumber.textContent = roundString + ROUNDNUM
     }
     else if (player == "scissors" && computer == "paper"){
         playerScoreHtml++;
-        playerScore.textContent = scoreString+playerScoreHtml
+        playerScore.textContent = "Player " +scoreString+playerScoreHtml
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        }
         roundNumber.textContent = roundString + ROUNDNUM
     }
     else if (player == "scissors" && computer == "rock"){
         computerScoreHtml++;
-        computerScore.textContent = scoreString+computerScoreHtml;
+        computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
+        if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
+            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+        }
+         if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
+            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+        }
+        if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
+            alert("TIE! REFRESH TO PLAY AGAIN")
+        }
         roundNumber.textContent = roundString + ROUNDNUM
     }
 }
 
 announcement.textContent = "Choose an option to play"
+
 
 btnpaper.addEventListener("click", function(){
     playerimage.setAttribute('src','imagesForRPS/handemoji.png')
@@ -96,17 +161,3 @@ btnscissors.addEventListener('click',function(){
     computer = getComputerChoice()
     playRound('scissors',computer)
     })
-
-    if (ROUNDNUM >= 5){
-        alert("GAME OVER")
-    }
-    
-    if (computerScoreHtml > playerScoreHtml){
-        announcement.textContent = "!!! YOU WIN !!!"
-    } 
-    else if (playerScoreHtml > computerScoreHtml){
-        announcement.textContent = "!!! YOU LOSE !!! "
-    }
-    else{
-        announcement.textContent = "TIE"
-    }

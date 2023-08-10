@@ -52,16 +52,16 @@ body{
     border: 1px solid;
     background-color: #3336FF;
     border-color: #3336FF;
-    border-radius: 50px;
+    border-radius: 200px;
 }
 .rock:hover{
-    background-color: rgb(0,200,120);
+    filter: brightness(150%);
 }
 .scissors:hover{
-    background-color: rgb(0,200,120);
+    filter: brightness(150%);
 }
 .paper:hover{
-    background-color: rgb(0,200,120);
+    filter: brightness(150%);
 }
 .rock-image{
     width: 200px;
@@ -97,4 +97,11 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+.footer{
+    margin-top: 80px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    font-size: 50px;
 }
