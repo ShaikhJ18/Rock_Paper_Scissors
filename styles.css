@@ -53,23 +53,37 @@ body{
     background-color: #3336FF;
     border-color: #3336FF;
     border-radius: 200px;
+    transition: 0.3s;
+    height: 400px;
+    width: 400px;
 }
 .rock:hover{
-    filter: brightness(150%);
+    background-color: blue;
+    box-shadow: 0 0 10px;
 }
 .scissors:hover{
-    filter: brightness(150%);
+    background-color: blue;
+    box-shadow: 0 0 10px;
 }
 .paper:hover{
-    filter: brightness(150%);
+    background-color: blue;
+    box-shadow: 0 0 10px;
 }
-.rock-image{
-    width: 200px;
-    height: 200px;
+.rock:active{
+    background-color: darkblue;
+    box-shadow: 0;
+}
+.paper:active{
+    background-color: darkblue;
+    box-shadow: 0px 0px 0px 0px;
+}
+.scissors:active{
+    background-color: darkblue;
+    box-shadow: 0;
 }
 .rock-image,.scissors-image,.paper-image{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 .player-image,.computer-image{
@@ -89,7 +103,7 @@ body{
 }
 
 .player-score,.computer-score{
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'Roboto',sans-serif;
     color: white;
 }
@@ -103,5 +117,5 @@ body{
     text-align: center;
     font-family: 'Roboto',sans-serif;
     color: white;
-    font-size: 50px;
+    font-size: 30px;
 }
