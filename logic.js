@@ -40,13 +40,16 @@ function playRound(playerSelection,computerSelection){
     if (player == computerSelection){
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!" )
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!" )
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!" )
+            location.reload()
         } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
@@ -55,13 +58,16 @@ function playRound(playerSelection,computerSelection){
         playerScore.textContent = "Player " +scoreString+playerScoreHtml
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!" )
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!" )
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!" )
+            location.reload()
         } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
@@ -70,13 +76,16 @@ function playRound(playerSelection,computerSelection){
         computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!" )
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!" )
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!" )
+            location.reload()
         } 
         roundNumber.textContent = roundString + ROUNDNUM
     }
@@ -85,13 +94,16 @@ function playRound(playerSelection,computerSelection){
         computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!" )
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!" )
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!")
+            location.reload()
         }
         roundNumber.textContent = roundString + ROUNDNUM 
  
@@ -101,13 +113,16 @@ function playRound(playerSelection,computerSelection){
         playerScore.textContent = "Player " +scoreString+playerScoreHtml;
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!")
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!")
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!")
+            location.reload()
         }
         roundNumber.textContent = roundString + ROUNDNUM
     }
@@ -116,13 +131,16 @@ function playRound(playerSelection,computerSelection){
         playerScore.textContent = "Player " +scoreString+playerScoreHtml
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!")
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!")
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!")
+            location.reload()
         }
         roundNumber.textContent = roundString + ROUNDNUM
     }
@@ -131,13 +149,16 @@ function playRound(playerSelection,computerSelection){
         computerScore.textContent = "Computer "+scoreString+computerScoreHtml;
         ROUNDNUM++
         if (ROUNDNUM == 6 && playerScoreHtml>computerScoreHtml){
-            alert("YOU WIN! REFRESH TO PLAY AGAIN")
+            alert("YOU WIN!")
+            location.reload()
         }
          if (ROUNDNUM == 6 && computerScoreHtml>playerScoreHtml){
-            alert("YOU LOSE! REFRESH TO PLAY AGAIN")
+            alert("YOU LOSE!")
+            location.reload()
         }
         if (ROUNDNUM == 6 && computerScoreHtml == playerScoreHtml){
-            alert("TIE! REFRESH TO PLAY AGAIN")
+            alert("TIE!")
+            location.reload()
         }
         roundNumber.textContent = roundString + ROUNDNUM
     }
