@@ -112,6 +112,33 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
 }
+.play-again{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.play-again-button:hover{
+    background-color: blue;
+    box-shadow: 0 0 10px darkblue;
+
+}
+.play-again-button:active{
+    background-color: darkblue;
+    box-shadow: 0;
+
+}
+.play-again-button{
+    font-size: 30px;
+    border: 2px solid #3336FF;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #3336FF;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
 .footer{
     margin-top: 80px;
     text-align: center;
